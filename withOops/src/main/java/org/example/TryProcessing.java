@@ -32,7 +32,7 @@ public class TryProcessing extends PApplet {
             int iterator = ball_num+1;
             int yCord = y * iterator;
             
-            balls[ball_num] = new Ball(iterator, yCord,DIAMETER,DIAMETER,iterator);
+            balls[ball_num] = new Ball(iterator, yCord, DIAMETER, iterator);
         }
     }
 
