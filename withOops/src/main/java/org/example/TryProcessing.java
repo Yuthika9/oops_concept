@@ -28,8 +28,10 @@ public class TryProcessing extends PApplet {
         int y = HEIGHT / 5;
 
         for(int ball_num = 0; ball_num < 4; ball_num++) {
+            
             int iterator = ball_num+1;
             int yCord = y * iterator;
+            
             balls[ball_num] = new Ball(iterator, yCord,DIAMETER,DIAMETER,iterator);
         }
     }
