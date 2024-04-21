@@ -24,10 +24,8 @@ public class TryProcessing extends PApplet {
     public void draw() {
         int y = HEIGHT / 5;
 
-        drawCircle(x,y);
-        drawCircle(x*2, y*2);
-        drawCircle(x*3,y*3);
-        drawCircle(x*4,y*4);
+        for(int ballnumber = 1; ballnumber<5; ballnumber++)
+            drawCircle(x*ballnumber,y*ballnumber);
 
         x++;
     }
