@@ -25,12 +25,12 @@ public class TryProcessing extends PApplet {
     @Override
     public void setup() {
 
-        int y = HEIGHT / 5;
+        float y = HEIGHT / 5;
 
         for(int ballNum = 0; ballNum < 4; ballNum++) {
             
             int iterator = ballNum+1;
-            int yCord = y * iterator;
+            float yCord = y * iterator;
             
             balls[ballNum] = new Ball(iterator, yCord, DIAMETER, iterator);
         }
