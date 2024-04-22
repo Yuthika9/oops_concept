@@ -3,8 +3,8 @@ import processing.core.PApplet;
 
 public class TryProcessing extends PApplet {
 
-    public static final int WIDTH = 700;
-    public static final int HEIGHT = 500;
+    public static final float WIDTH = 700;
+    public static final float HEIGHT = 500;
     public static final float DIAMETER = 12;
 
     Ball[] balls = new Ball[4];
