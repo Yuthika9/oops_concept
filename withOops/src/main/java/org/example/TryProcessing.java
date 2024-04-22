@@ -3,8 +3,8 @@ import processing.core.PApplet;
 
 public class TryProcessing extends PApplet {
 
-    public static final float WIDTH = 700;
-    public static final float HEIGHT = 500;
+    public static final int WIDTH = 700;
+    public static final int HEIGHT = 500;
     public static final float DIAMETER = 12;
 
     Ball[] balls = new Ball[4];
@@ -25,14 +25,14 @@ public class TryProcessing extends PApplet {
     @Override
     public void setup() {
 
-        float verticalSpace = HEIGHT / 5;
+        float verticalSpace = float(HEIGHT / 5);
 
         for(int ballNum = 0; ballNum < 4; ballNum++) {
             
-            int iterator = ballNum+1;
-            float yCord = verticalSpace * iterator;
+            int frameSpeed = ballNum+1;
+            float yCord = verticalSpace * frameSpeed;
             
-            balls[ballNum] = new Ball(iterator, yCord, DIAMETER, iterator);
+            balls[ballNum] = new Ball(0, yCord, DIAMETER, frameSpeed);
         }
     }
 
