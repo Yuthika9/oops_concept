@@ -25,7 +25,7 @@ public class TryProcessing extends PApplet {
     @Override
     public void setup() {
 
-        float verticalSpace = float(HEIGHT / 5);
+        float verticalSpace = (float)(HEIGHT / 5);
 
         for(int ballNum = 0; ballNum < 4; ballNum++) {
             
